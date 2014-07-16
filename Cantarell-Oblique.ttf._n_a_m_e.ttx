@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<ttFont ttLibVersion="2.4">
+
+  <name>
+    <namerecord nameID="0" platformID="1" platEncID="0" langID="0x0">
+      Copyright (c) 2009 Dave Crossland &lt;dave@lab6.com>
+    </namerecord>
+    <namerecord nameID="1" platformID="1" platEncID="0" langID="0x0">
+      Cantarell
+    </namerecord>
+    <namerecord nameID="2" platformID="1" platEncID="0" langID="0x0">
+      Oblique
+    </namerecord>
+    <namerecord nameID="3" platformID="1" platEncID="0" langID="0x0">
+      ABATTIS : Cantarell Oblique : 17-7-2009
+    </namerecord>
+    <namerecord nameID="4" platformID="1" platEncID="0" langID="0x0">
+      Cantarell Oblique
+    </namerecord>
+    <namerecord nameID="5" platformID="1" platEncID="0" langID="0x0">
+      Version 001.001 
+    </namerecord>
+    <namerecord nameID="6" platformID="1" platEncID="0" langID="0x0">
+      Cantarell-Oblique
+    </namerecord>
+    <namerecord nameID="9" platformID="1" platEncID="0" langID="0x0">
+      Dave Crossland
+    </namerecord>
+    <namerecord nameID="11" platformID="1" platEncID="0" langID="0x0">
+      http://abattis.org
+    </namerecord>
+    <namerecord nameID="12" platformID="1" platEncID="0" langID="0x0">
+      http://abattis.org
+    </namerecord>
+    <namerecord nameID="13" platformID="1" platEncID="0" langID="0x0">
+      Copyright (c) 2009 Dave Crossland &lt;dave@lab6.com>&#10;&#10;This font is free software: you can redistribute it and/or modify&#10;it under the terms of the GNU General Public License as published by&#10;the Free Software Foundation, either version 3 of the License, or&#10;(at your option) any later version.&#10;&#10;In summary, you are free to do anything you like with this font on&#10;your own computer, but if you redistribute modified versions to anyone&#10;at all, you must provide full source files to them when asked.&#10;&#10;This font is distributed in the hope that it will be useful,&#10;but WITHOUT ANY WARRANTY; without even the implied warranty of&#10;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&#10;GNU General Public License for more details.&#10;&#10;As a special exception, if you create a document which uses this font,&#10;and embed this font or unaltered portions of this font into the&#10;document, this font does not by itself cause the resulting document to&#10;be covered by the GNU General Public License. This exception does not&#10;however invalidate any other reasons why the document might be covered&#10;by the GNU General Public License. If you modify this font, you may&#10;extend this exception to your version of the font, but you are not&#10;obligated to do so. If you do not wish to do so, delete this exception&#10;statement from your version.
+    </namerecord>
+    <namerecord nameID="20" platformID="1" platEncID="0" langID="0x0">
+      Cantarell
+    </namerecord>
+    <namerecord nameID="0" platformID="3" platEncID="1" langID="0x409">
+      Copyright (c) 2009 Dave Crossland &lt;dave@lab6.com>
+    </namerecord>
+    <namerecord nameID="1" platformID="3" platEncID="1" langID="0x409">
+      Cantarell
+    </namerecord>
+    <namerecord nameID="2" platformID="3" platEncID="1" langID="0x409">
+      Oblique
+    </namerecord>
+    <namerecord nameID="3" platformID="3" platEncID="1" langID="0x409">
+      ABATTIS : Cantarell Oblique : 17-7-2009
+    </namerecord>
+    <namerecord nameID="4" platformID="3" platEncID="1" langID="0x409">
+      Cantarell Oblique
+    </namerecord>
+    <namerecord nameID="5" platformID="3" platEncID="1" langID="0x409">
+      Version 001.001 
+    </namerecord>
+    <namerecord nameID="6" platformID="3" platEncID="1" langID="0x409">
+      Cantarell-Oblique
+    </namerecord>
+    <namerecord nameID="9" platformID="3" platEncID="1" langID="0x409">
+      Dave Crossland
+    </namerecord>
+    <namerecord nameID="11" platformID="3" platEncID="1" langID="0x409">
+      http://abattis.org
+    </namerecord>
+    <namerecord nameID="12" platformID="3" platEncID="1" langID="0x409">
+      http://abattis.org
+    </namerecord>
+    <namerecord nameID="13" platformID="3" platEncID="1" langID="0x409">
+      Copyright (c) 2009 Dave Crossland &lt;dave@lab6.com>&#10;&#10;This font is free software: you can redistribute it and/or modify&#10;it under the terms of the GNU General Public License as published by&#10;the Free Software Foundation, either version 3 of the License, or&#10;(at your option) any later version.&#10;&#10;In summary, you are free to do anything you like with this font on&#10;your own computer, but if you redistribute modified versions to anyone&#10;at all, you must provide full source files to them when asked.&#10;&#10;This font is distributed in the hope that it will be useful,&#10;but WITHOUT ANY WARRANTY; without even the implied warranty of&#10;MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the&#10;GNU General Public License for more details.&#10;&#10;As a special exception, if you create a document which uses this font,&#10;and embed this font or unaltered portions of this font into the&#10;document, this font does not by itself cause the resulting document to&#10;be covered by the GNU General Public License. This exception does not&#10;however invalidate any other reasons why the document might be covered&#10;by the GNU General Public License. If you modify this font, you may&#10;extend this exception to your version of the font, but you are not&#10;obligated to do so. If you do not wish to do so, delete this exception&#10;statement from your version.
+    </namerecord>
+    <namerecord nameID="20" platformID="3" platEncID="1" langID="0x409">
+      Cantarell
+    </namerecord>
+  </name>
+
+</ttFont>
