@@ -1,0 +1,1347 @@
+# Bake Begins!
+### (1 of 6) Copy sources
+$ cp -a /home/travis/build/fontdirectory/cantarell/METADATA.json /home/travis/build/fontdirectory/cantarell/builds/build
+$ cp -a /home/travis/build/fontdirectory/cantarell/FONTLOG.txt /home/travis/build/fontdirectory/cantarell/builds/build
+$ cp -a /home/travis/build/fontdirectory/cantarell/DESCRIPTION.en_us.html /home/travis/build/fontdirectory/cantarell/builds/build
+$ cp -a Cantarell-Bold.ttf.ttx Cantarell-Regular.ttf.ttx Cantarell-Oblique.ttf.ttx Cantarell-BoldOblique.ttf.ttx src/src/Cantarell-Regular-Spiro.sfd src/src/Cantarell-Bold.sfd src/src/Cantarell-Oblique.sfd src/src/Cantarell-BoldOblique.sfd src/src/Cantarell-Regular.sfd Cantarell-Bold.ttf._g_l_y_f.ttx Cantarell-Bold.ttf._p_o_s_t.ttx Cantarell-Bold.ttf._n_a_m_e.ttx Cantarell-Bold.ttf._h_e_a_d.ttx Cantarell-Bold.ttf.O_S_2f_2.ttx Cantarell-Bold.ttf._h_h_e_a.ttx Cantarell-Bold.ttf.F_F_T_M_.ttx Cantarell-Bold.ttf._m_a_x_p.ttx Cantarell-Bold.ttf._c_v_t.ttx Cantarell-Bold.ttf.GlyphOrder.ttx Cantarell-Bold.ttf._g_a_s_p.ttx Cantarell-Bold.ttf._h_m_t_x.ttx Cantarell-Bold.ttf._c_m_a_p.ttx Cantarell-Bold.ttf._l_o_c_a.ttx Cantarell-Regular.ttf._h_e_a_d.ttx Cantarell-Regular.ttf._p_o_s_t.ttx Cantarell-Regular.ttf._l_o_c_a.ttx Cantarell-Regular.ttf._g_l_y_f.ttx Cantarell-Regular.ttf._h_h_e_a.ttx Cantarell-Regular.ttf.GlyphOrder.ttx Cantarell-Regular.ttf.F_F_T_M_.ttx Cantarell-Regular.ttf._c_v_t.ttx Cantarell-Regular.ttf._n_a_m_e.ttx Cantarell-Regular.ttf.O_S_2f_2.ttx Cantarell-Regular.ttf._g_a_s_p.ttx Cantarell-Regular.ttf._h_m_t_x.ttx Cantarell-Regular.ttf._c_m_a_p.ttx Cantarell-Regular.ttf._m_a_x_p.ttx Cantarell-Oblique.ttf._h_m_t_x.ttx Cantarell-Oblique.ttf._p_o_s_t.ttx Cantarell-Oblique.ttf._g_l_y_f.ttx Cantarell-Oblique.ttf._h_e_a_d.ttx Cantarell-Oblique.ttf._l_o_c_a.ttx Cantarell-Oblique.ttf._m_a_x_p.ttx Cantarell-Oblique.ttf._c_v_t.ttx Cantarell-Oblique.ttf._h_h_e_a.ttx Cantarell-Oblique.ttf._n_a_m_e.ttx Cantarell-Oblique.ttf._g_a_s_p.ttx Cantarell-Oblique.ttf._c_m_a_p.ttx Cantarell-Oblique.ttf.GlyphOrder.ttx Cantarell-Oblique.ttf.F_F_T_M_.ttx Cantarell-Oblique.ttf.O_S_2f_2.ttx Cantarell-BoldOblique.ttf._g_l_y_f.ttx Cantarell-BoldOblique.ttf._p_o_s_t.ttx Cantarell-BoldOblique.ttf._c_v_t.ttx Cantarell-BoldOblique.ttf._g_a_s_p.ttx Cantarell-BoldOblique.ttf._h_e_a_d.ttx Cantarell-BoldOblique.ttf._n_a_m_e.ttx Cantarell-BoldOblique.ttf.F_F_T_M_.ttx Cantarell-BoldOblique.ttf._h_m_t_x.ttx Cantarell-BoldOblique.ttf.GlyphOrder.ttx Cantarell-BoldOblique.ttf._l_o_c_a.ttx Cantarell-BoldOblique.ttf._h_h_e_a.ttx Cantarell-BoldOblique.ttf._m_a_x_p.ttx Cantarell-BoldOblique.ttf.O_S_2f_2.ttx Cantarell-BoldOblique.ttf._c_m_a_p.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources
+### (2 of 6) pyfontaine
+### (3 of 6) Run upstream tests
+$ bakery-lint.py upstream-repo sources
+$ fontaine --collections subsets --text /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Bold.ttf.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Regular.ttf.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Oblique.ttf.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-BoldOblique.ttf.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Regular-Spiro.sfd /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Bold.sfd /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Oblique.sfd /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-BoldOblique.sfd /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Regular.sfd > fontaine.txt
+WARNING: Please install [PyICU](https://pypi.python.org/pypi/PyICU) toenable [feature], perhaps with: pip install pyicu
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_contours(): OK
+pyfontaine error: Not a TrueType or OpenType font (bad sfntVersion)
+pyfontaine process has been failed
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_prepolation_glyph_points(): OK
+bakery_lint.tests.upstream.test_prepolation.FontTestPrepolation.test_font_test_prepolation_glyph_names(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_bakery_yaml_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_copyright_notices_same_across_family(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_description_html_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_fontlog_txt_exists(): OK
+bakery_lint.tests.upstream.test_check_upstream_sources.ProjectUpstreamTestCase.test_metadata_json_exists(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_component(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_mark_to_mark(): OK
+bakery_lint.tests.upstream.test_diacritic.TestDiacritic.test_diacritic_made_as_own_glyphs(): OK
+$ bakery-lint.py upstream-ttx Cantarell-Bold.ttf.ttx
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Bold.ttf.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Bold.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+$ bakery-lint.py upstream-ttx Cantarell-Regular.ttf.ttx
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Regular.ttf.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Regular.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+$ bakery-lint.py upstream-ttx Cantarell-Oblique.ttf.ttx
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Oblique.ttf.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Oblique.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+$ bakery-lint.py upstream-ttx Cantarell-BoldOblique.ttf.ttx
+bakery_lint.tests.upstream.test_check_ttx_fontfamily_recommendations.TTX_FontFamilyNamingTest.test_ttx_family_naming_recommendation(): OK
+bakery_lint.tests.upstream.test_glyphname_does_not_contain_disallowed_chars.TestGlyphNameDoesNotContainsDisallowedChars.test_glyphname_does_not_contain_disallowed_chars(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_epar_in_keys(): FAIL
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_os2_in_keys(): OK
+bakery_lint.tests.upstream.test_check_ttx_requirements.SourceTTXTest.test_ttx_doesnt_contain_duplicate_glyphs(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): FAIL
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-BoldOblique.ttf.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-BoldOblique.ttx
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): OK
+$ bakery-lint.py upstream Cantarell-Regular-Spiro.sfd
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+$ bakery-lint.py upstream Cantarell-Bold.sfd
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+$ bakery-lint.py upstream Cantarell-Oblique.sfd
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+$ bakery-lint.py upstream Cantarell-BoldOblique.sfd
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+$ bakery-lint.py upstream Cantarell-Regular.sfd
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_has_rupee(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_A_a_glyph_instance(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_ended_ufo(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_folder(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_is_fsType_eq_1(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_requirements.UfoOpenTest.test_it_exists(): ERROR
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_familyname_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_fullfontname_less_than_64_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_consistof_allowed_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_postscriptname_less_than_30_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_stylename_less_than_32_chars(): OK
+bakery_lint.tests.upstream.test_check_ufo_fontfamily_recommendations.TestUFOFontFamilyNamingTest.test_weight_value_range_between_250_and_900(): OK
+bakery_lint.tests.upstream.test_font_filename_eq_familystyle.TestTTFSourceFontFileNameEqualsFamilyStyle.test_source_ttf_font_filename_equals_familystyle(): ERROR
+### (4 of 6) Convert sources to TTF
+$ ttx -d /home/travis/build/fontdirectory/cantarell/builds/build /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Oblique.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Regular.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-BoldOblique.ttx /home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Bold.ttx
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Regular-Spiro.sfd
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Bold.sfd
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Oblique.sfd
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-BoldOblique.sfd
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Regular.sfd
+Compiling "/home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Oblique.ttx" to "/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Compiling "/home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Regular.ttx" to "/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Compiling "/home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-BoldOblique.ttx" to "/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+Compiling "/home/travis/build/fontdirectory/cantarell/builds/build/sources/Cantarell-Bold.ttx" to "/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf"...
+Parsing 'GlyphOrder' table...
+Parsing 'head' table...
+Parsing 'hhea' table...
+Parsing 'maxp' table...
+Parsing 'OS/2' table...
+Parsing 'hmtx' table...
+Parsing 'cmap' table...
+Parsing 'cvt ' table...
+Parsing 'loca' table...
+Parsing 'glyf' table...
+Parsing 'name' table...
+Parsing 'post' table...
+Parsing 'gasp' table...
+Parsing 'FFTM' table...
+### Test Cantarell-Oblique.ttf
+$ bakery-lint.py result Cantarell-Oblique.ttf
+### Test Cantarell-Regular.ttf
+$ bakery-lint.py result Cantarell-Regular.ttf
+### Test Cantarell-BoldOblique.ttf
+$ bakery-lint.py result Cantarell-BoldOblique.ttf
+$ font2ttf.py sources/Cantarell-Regular-Spiro.sfd Cantarell-Regular-Spiro.ttf
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): ERROR
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+### Test Cantarell-Bold.ttf
+$ bakery-lint.py result Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): ERROR
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): ERROR
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): ERROR
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf)
+$ font2ttf.py sources/Cantarell-Bold.sfd Cantarell-Bold.ttf
+### Test Cantarell-Regular-Spiro.ttf
+$ bakery-lint.py result Cantarell-Regular-Spiro.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf)
+$ font2ttf.py sources/Cantarell-Oblique.sfd Cantarell-Oblique.ttf
+### Test Cantarell-Bold.ttf
+$ bakery-lint.py result Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): ERROR
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): FAIL
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): FAIL
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+Process Process-10:
+Traceback (most recent call last):
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/build.py", line 114, in run_processes
+    fontlint.run(filename, pipedata)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/fontlint.py", line 60, in run
+    log=self.bakery.logger)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/__init__.py", line 27, in run_set
+    return run_suite(tests_suite)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 246, in run_suite
+    runner.run(suite)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 171, in run
+    test(result)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/suite.py", line 70, in __call__
+    return self.run(*args, **kwds)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/suite.py", line 108, in run
+    test(result)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/case.py", line 393, in __call__
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+    return self.run(*args, **kwds)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/case.py", line 333, in run
+    result.addFailure(self, sys.exc_info())
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 136, in addFailure
+    self.callmethod(test_method.autofix_method, test)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 91, in callmethod
+    getattr(mod, methodname.split('.')[-1])(test)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/autofix.py", line 121, in fix_metrics
+    metricfix(paths)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/scripts/vmet.py", line 76, in metricfix
+    metrics = Font(f)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/ttfont.py", line 43, in __init__
+    self.ttfont = ttLib.TTFont(fontpath)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/__init__.py", line 166, in __init__
+    self.reader = sfnt.SFNTReader(file, checkChecksums, fontNumber=fontNumber)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/sfnt.py", line 49, in __init__
+    sstruct.unpack(sfntDirectoryFormat, self.file.read(sfntDirectorySize), self)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/misc/sstruct.py", line 87, in unpack
+    elements = struct.unpack(formatstring, data)
+error: unpack requires a string argument of length 12
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf)
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+$ font2ttf.py sources/Cantarell-BoldOblique.sfd Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+### Test Cantarell-Oblique.ttf
+$ bakery-lint.py result Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): ERROR
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): FAIL
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ bakery-vmet-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ bakery-vmet-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+Process Process-11:
+Traceback (most recent call last):
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/build.py", line 114, in run_processes
+    fontlint.run(filename, pipedata)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/fontlint.py", line 60, in run
+    log=self.bakery.logger)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/__init__.py", line 27, in run_set
+    return run_suite(tests_suite)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 246, in run_suite
+    runner.run(suite)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 171, in run
+    test(result)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/suite.py", line 70, in __call__
+    return self.run(*args, **kwds)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/suite.py", line 108, in run
+    test(result)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/case.py", line 393, in __call__
+    return self.run(*args, **kwds)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/case.py", line 333, in run
+    result.addFailure(self, sys.exc_info())
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 136, in addFailure
+    self.callmethod(test_method.autofix_method, test)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 91, in callmethod
+    getattr(mod, methodname.split('.')[-1])(test)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/autofix.py", line 121, in fix_metrics
+    metricfix(paths)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/scripts/vmet.py", line 76, in metricfix
+    metrics = Font(f)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/ttfont.py", line 43, in __init__
+    self.ttfont = ttLib.TTFont(fontpath)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/__init__.py", line 166, in __init__
+    self.reader = sfnt.SFNTReader(file, checkChecksums, fontNumber=fontNumber)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/sfnt.py", line 49, in __init__
+    sstruct.unpack(sfntDirectoryFormat, self.file.read(sfntDirectorySize), self)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/misc/sstruct.py", line 87, in unpack
+    elements = struct.unpack(formatstring, data)
+error: unpack requires a string argument of length 12
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf)
+$ font2ttf.py sources/Cantarell-Regular.sfd Cantarell-Regular.ttf
+### Test Cantarell-BoldOblique.ttf
+$ bakery-lint.py result Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): ERROR
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/tables/O_S_2f_2.py:119: UserWarning: too much 'OS/2' table data
+  warnings.warn("too much 'OS/2' table data")
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+Parameter              Cantarell-BoldOblique.ttf    Cantarell-Oblique.ttf    Cantarell-Regular.ttf    Cantarell-Bold.ttf    Cantarell-Regular-Spiro.ttf    
+ymax                   2157                         2137                     2137                     2157                  2168                           
+hhea.ascent            2168                         2168                     2168                     2168                  2168                           
+OS/2.sTypoAscender     2168                         2168                     2168                     2168                  2168                           
+OS/2.usWinAscent       2168                         2168                     2168                     2168                  2168                           
+ymin                   -585                         -555                     -555                     -585                  -570                           
+hhea.descent           -585                         -585                     -585                     -585                  -585                           
+OS/2.sTypoDescender    -585                         -585                     -585                     -585                  -585                           
+OS/2.usWinDescent      585                          585                      585                      585                   585                            
+hhea.lineGap           0                            0                        0                        0                     0                              
+OS/2.sTypoLineGap      0                            0                        0                        0                     0                              
+hhea total             2753                         2753                     2753                     2753                  2753                           
+typo total             2753                         2753                     2753                     2753                  2753                           
+win total              2753                         2753                     2753                     2753                  2753                           
+UPM:Heights            2048:2742                    2048:2692                2048:2692                2048:2742             2048:2738                      
+UPM:Heights %          133 %                        131 %                    131 %                    133 %                 133 %                          
+
+
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): FAIL
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ bakery-vmet-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+Process Process-8:
+Traceback (most recent call last):
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/build.py", line 114, in run_processes
+    fontlint.run(filename, pipedata)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/fontlint.py", line 60, in run
+    log=self.bakery.logger)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/__init__.py", line 27, in run_set
+    return run_suite(tests_suite)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 246, in run_suite
+    runner.run(suite)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 171, in run
+    test(result)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/suite.py", line 70, in __call__
+    return self.run(*args, **kwds)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/suite.py", line 108, in run
+    test(result)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/case.py", line 393, in __call__
+    return self.run(*args, **kwds)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/case.py", line 333, in run
+    result.addFailure(self, sys.exc_info())
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 136, in addFailure
+    self.callmethod(test_method.autofix_method, test)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 91, in callmethod
+    getattr(mod, methodname.split('.')[-1])(test)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/autofix.py", line 132, in fix_metrics
+    testcase.operator.debug(metricview(paths))
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/scripts/vmet.py", line 41, in metricview
+    metrics = Font(f)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/ttfont.py", line 43, in __init__
+    self.ttfont = ttLib.TTFont(fontpath)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/__init__.py", line 166, in __init__
+    self.reader = sfnt.SFNTReader(file, checkChecksums, fontNumber=fontNumber)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/sfnt.py", line 49, in __init__
+    sstruct.unpack(sfntDirectoryFormat, self.file.read(sfntDirectorySize), self)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/misc/sstruct.py", line 87, in unpack
+    elements = struct.unpack(formatstring, data)
+error: unpack requires a string argument of length 12
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+Success: Generated OpenType-TTF (/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf)
+### Test Cantarell-Regular.ttf
+$ bakery-lint.py result Cantarell-Regular.ttf
+### (5 of 6) Generate METADATA.json (genmetadata.py)
+$ genmetadata.py /home/travis/build/fontdirectory/cantarell/builds/build
+{} exists
+Designer's name from font is: Dave Crossland
+bakery_lint.tests.downstream.test_check_license_included.CheckLicenseIncluded.test_license_included_in_font_names(): ERROR
+bakery_lint.tests.downstream.test_check_unused_glyph_data.CheckUnusedGlyphData.test_check_unused_glyph_data(): ERROR
+The following table(s) in the font have been ignored by FontForge
+  Ignoring 'DSIG' digital signature table
+Original size: 46740\nGzip size: 24890
+Family Name: Cantarell
+PS Name: Cantarell-BoldOblique
+Full Name: Cantarell Bold Oblique
+Style: italic
+Weight: 700
+Filename: Cantarell-BoldOblique.ttf
+Copyright: Copyright (c) 2009 Dave Crossland <dave@lab6.com>
+Family Name: Cantarell
+PS Name: Cantarell-Oblique
+Full Name: Cantarell Oblique
+Style: italic
+Weight: 500
+Filename: Cantarell-Oblique.ttf
+Copyright: Copyright (c) 2009 Dave Crossland <dave@lab6.com>
+Family Name: Cantarell
+PS Name: Cantarell-Regular
+Full Name: Cantarell Regular
+Style: normal
+Weight: 500
+Filename: Cantarell-Regular.ttf
+Copyright: Copyright (c) 2009 Dave Crossland <dave@lab6.com>
+Family Name: Cantarell
+PS Name: Cantarell-Bold
+Full Name: Cantarell Bold
+Style: normal
+Weight: 700
+Filename: Cantarell-Bold.ttf
+Copyright: Copyright (c) 2009 Dave Crossland <dave@lab6.com>
+Family Name: Cantarell
+PS Name: Cantarell-Regular
+Full Name: Cantarell Regular
+Style: normal
+Weight: 500
+Filename: Cantarell-Regular-Spiro.ttf
+Copyright: Copyright (c) 2009 Dave Crossland <dave@lab6.com>
+### (6 of 6) Run tests for METADATA.json
+$ bakery-lint.py metadata METADATA.json
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_latin(): FAIL
+bakery_lint.tests.metadata_test.MetadataSubsetsListTest.test_charset_menu(): FAIL
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_more_than_500b(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_description_is_valid_html(): FAIL
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): FAIL
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ bakery-vmet-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_daltonmaag_catalogue(): FAIL
+$ bakery-vmet-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+WARNING: Inconsistent hhea.lineGap OS/2.sTypoDescender hhea.ascent OS/2.usWinDescent OS/2.sTypoAscender OS/2.usWinAscent hhea.descent
+
+WARNING: Cantarell-BoldOblique.ttf has NOT even heights
+Parameter              Cantarell-BoldOblique.ttf    Cantarell-Oblique.ttf    Cantarell-Regular.ttf    Cantarell-Bold.ttf    Cantarell-Regular-Spiro.ttf    
+ymax                   2157                         2137                     2137                     2157                  2168                           
+hhea.ascent            3                            2168                     2168                     2168                  2168                           
+OS/2.sTypoAscender     0                            2168                     2168                     2168                  2168                           
+OS/2.usWinAscent       16706                        2168                     2168                     2168                  2168                           
+ymin                   -585                         -555                     -555                     -585                  -570                           
+hhea.descent           8                            -585                     -585                     -585                  -585                           
+OS/2.sTypoDescender    0                            -585                     -585                     -585                  -585                           
+OS/2.usWinDescent      16724                        585                      585                      585                   585                            
+hhea.lineGap           2                            0                        0                        0                     0                              
+OS/2.sTypoLineGap      0                            0                        0                        0                     0                              
+hhea total             13                           2753                     2753                     2753                  2753                           
+typo total             0                            2753                     2753                     2753                  2753                           
+win total              33430                        2753                     2753                     2753                  2753                           
+UPM:Heights            2048:2742                    2048:2692                2048:2692                2048:2742             2048:2738                      
+UPM:Heights %          133 %                        131 %                    131 %                    133 %                 133 %                          
+
+Low Glyphs
+Cantarell-BoldOblique.ttf: aring dollar obreve kcommaaccent ccaron quotesinglbase Euro underscore Gcircumflex amacron p Kcommaaccent Otilde zero uni022C uni022D Scaron egrave Sacute section Cacute ampersand gcommaaccent acircumflex Uhungarumlaut Cdotaccent ocircumflex threequarters Gdotaccent Gbreve dcaron scaron bracketleft f paragraph nine Eogonek cdotaccent backslash Uring tbar ygrave umacron a uniFB04 eng uniFB01 uniFB00 uniFB03 uniFB02 q exclamdbl oacute six uni1E57 ograve ecaron uring edieresis comma Scedilla otilde gcircumflex ecircumflex uacute ccircumflex dcroat cedilla omacron ydieresis ncommaaccent exclamdown Eng fraction agrave germandbls Odieresis ucircumflex parenleft G Tcommaaccent Ncommaaccent Obreve Q g uni0237 Ubreve Rcommaaccent Aogonek b tcommaaccent Jcircumflex Ccedilla tcaron lcommaaccent Ucircumflex abreve florin Uacute edotaccent ohungarumlaut onehalf eight Ocircumflex Uogonek questiondown perthousand ccedilla copyright yen uni1E6B cacute uni1E61 uni1E60 bar interrobang udieresis Ccaron braceleft onequarter atilde sacute Oslash gbreve C S exclam c Lcommaaccent s eth uhungarumlaut Utilde period colon ae cent ycircumflex uni204B Oacute braceright brokenbar ugrave ij Ugrave sterling IJ uni0191 y yacute Udieresis five oslash d Scircumflex t aogonek parenright uni00B5 jcircumflex adieresis eogonek Umacron utilde uni1E0B slash ellipsis numbersign odieresis ebreve O uni1E03 rcommaaccent oe o emacron three Gcommaaccent scircumflex question uogonek Ccircumflex Omacron Iogonek J e iogonek Ograve j ogonek semicolon quotedblbase at daggerdbl ubreve bracketright gdotaccent scedilla aacute U eacute thorn Ohungarumlaut u
+
+Inconsistent hhea.lineGap: Cantarell-BoldOblique.ttf
+Inconsistent OS/2.sTypoDescender: Cantarell-BoldOblique.ttf
+Inconsistent hhea.ascent: Cantarell-BoldOblique.ttf
+Inconsistent OS/2.usWinDescent: Cantarell-BoldOblique.ttf
+Inconsistent OS/2.sTypoAscender: Cantarell-BoldOblique.ttf
+Inconsistent OS/2.usWinAscent: Cantarell-BoldOblique.ttf
+Inconsistent hhea.descent: Cantarell-BoldOblique.ttf
+
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontbureau_catalogue(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_paths_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_composite_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_allowed_numbers_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_duplicate_unicode_codepoints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_flipped_reference_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_anchors(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_missing_extrema_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_overlapped_hints(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_integer_aligned(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_points_are_not_too_far_apart(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_hints_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_postscript_hasnt_limit_points_in_glyphs(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_referenced_glyphs_are_present(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_glyph_names(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_valid_length_instructions(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_glyph_intersect(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_validation_open_contours(): OK
+bakery_lint.tests.downstream.test_fontforge_validation_state.FontForgeValidateStateTest.test_wrong_direction_in_glyphs(): OK
+bakery_lint.tests.downstream.test_check_glyf_table_length.CheckGlyfTableLength.test_check_glyf_table_length(): FAIL
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckStyleNameRecommendation.test_check_stylename_is_under_recommendations(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): FAIL
+$ bakery-opentype-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFamilyNameRecommendation.test_check_opentype_familyname(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTStyleNameRecommendation.test_check_opentype_stylename(): OK
+bakery_lint.tests.downstream.test_check_name_table_recommendation.CheckOTFullNameRecommendation.test_check_opentype_fullname(): OK
+bakery_lint.tests.downstream.test_check_names_same_across_platforms.CheckNamesSameAcrossPlatforms.test_check_names_same_across_platforms(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_euro(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_nbsp(): OK
+bakery_lint.tests.downstream.test_check_glyph_existence.CheckGlyphExistence.test_space(): OK
+bakery_lint.tests.downstream.test_check_hmtx_hhea_max_advance_width_agreement.CheckHmtxHheaMaxAdvanceWidthAgreement.test_check_hmtx_hhea_max_advance_width_agreement(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFsTypeIsNotSet.test_is_fstype_not_set(): OK
+$ bakery-fstype-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_em_is_1000(): FAIL
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_file_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_font_is_font(): OK
+bakery_lint.tests.downstream.test_check_font_agreements.CheckFontAgreements.test_latin_file_exists(): FAIL
+bakery_lint.tests.downstream.test_check_nbsp_width_matches_sp_width.CheckNbspWidthMatchesSpWidth.test_check_nbsp_width_matches_sp_width(): OK
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): FAIL
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+bakery_lint.tests.downstream.test_gasp_table_value.CheckGaspTableType.test_check_gasp_table_type(): OK
+$ bakery-gasp.py --set=15 /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+$ bakery-vmet-fix.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular-Spiro.ttf
+Parameter              Cantarell-BoldOblique.ttf    Cantarell-Oblique.ttf    Cantarell-Regular.ttf    Cantarell-Bold.ttf    Cantarell-Regular-Spiro.ttf    
+ymax                   2157                         2137                     2137                     2157                  2168                           
+hhea.ascent            2168                         2168                     2168                     2168                  2168                           
+OS/2.sTypoAscender     2168                         2168                     2168                     2168                  2168                           
+OS/2.usWinAscent       2168                         2168                     2168                     2168                  2168                           
+ymin                   -585                         -555                     -555                     -585                  -570                           
+hhea.descent           -585                         -585                     -585                     -585                  -585                           
+OS/2.sTypoDescender    -585                         -585                     -585                     -585                  -585                           
+OS/2.usWinDescent      585                          585                      585                      585                   585                            
+hhea.lineGap           0                            0                        0                        0                     0                              
+OS/2.sTypoLineGap      0                            0                        0                        0                     0                              
+hhea total             2753                         2753                     2753                     2753                  2753                           
+typo total             2753                         2753                     2753                     2753                  2753                           
+win total              2753                         2753                     2753                     2753                  2753                           
+UPM:Heights            2048:2742                    2048:2692                2048:2692                2048:2742             2048:2738                      
+UPM:Heights %          133 %                        131 %                    131 %                    133 %                 133 %                          
+
+
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontscom_catalogue(): OK
+Parameter              Cantarell-BoldOblique.ttf    Cantarell-Oblique.ttf    Cantarell-Regular.ttf    Cantarell-Bold.ttf    Cantarell-Regular-Spiro.ttf    
+ymax                   2157                         2137                     2137                     2157                  2168                           
+hhea.ascent            2168                         2168                     2168                     2168                  2168                           
+OS/2.sTypoAscender     2168                         2168                     2168                     2168                  2168                           
+OS/2.usWinAscent       2168                         2168                     2168                     2168                  2168                           
+ymin                   -585                         -555                     -555                     -585                  -570                           
+hhea.descent           -585                         -585                     -585                     -585                  -585                           
+OS/2.sTypoDescender    -585                         -585                     -585                     -585                  -585                           
+OS/2.usWinDescent      585                          585                      585                      585                   585                            
+hhea.lineGap           0                            0                        0                        0                     0                              
+OS/2.sTypoLineGap      0                            0                        0                        0                     0                              
+hhea total             2753                         2753                     2753                     2753                  2753                           
+typo total             2753                         2753                     2753                     2753                  2753                           
+win total              2753                         2753                     2753                     2753                  2753                           
+UPM:Heights            2048:2742                    2048:2692                2048:2692                2048:2742             2048:2738                      
+UPM:Heights %          133 %                        131 %                    131 %                    133 %                 133 %                          
+
+
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontshop_catalogue(): FAIL
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalLinegapMetrics.test_metrics_linegaps_are_zero(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_fontsmith_catalogue(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_houseind_catalogue(): OK
+### Optimize TTF Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+$ ls -l 'Cantarell-Oblique.ttf'* # look at the size savings of that subset process
+Cantarell-Oblique.ttf.opt: 44548 bytes
+Cantarell-Oblique.ttf: 49328 bytes
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.opt /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+### Autohint TTFs (ttfautohint) Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): FAIL
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ bakery-dsig.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+Process Process-9:
+Traceback (most recent call last):
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/build.py", line 114, in run_processes
+    fontlint.run(filename, pipedata)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/fontlint.py", line 60, in run
+    log=self.bakery.logger)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/__init__.py", line 27, in run_set
+    return run_suite(tests_suite)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 246, in run_suite
+    runner.run(suite)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 171, in run
+    test(result)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/suite.py", line 70, in __call__
+    return self.run(*args, **kwds)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/suite.py", line 108, in run
+    test(result)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/case.py", line 393, in __call__
+    return self.run(*args, **kwds)
+  File "/opt/python/2.7.8/lib/python2.7/unittest/case.py", line 333, in run
+    result.addFailure(self, sys.exc_info())
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 136, in addFailure
+    self.callmethod(test_method.autofix_method, test)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/base.py", line 91, in callmethod
+    getattr(mod, methodname.split('.')[-1])(test)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/autofix.py", line 56, in dsig_signature
+    dsig.create(targetpath)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/scripts/dsig.py", line 23, in create
+    font.save(fontpath + '.fix')
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/__init__.py", line 212, in save
+    self._writeTable(tag, writer, done)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/__init__.py", line 624, in _writeTable
+    self._writeTable(masterTable, writer, done)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/__init__.py", line 624, in _writeTable
+    self._writeTable(masterTable, writer, done)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/__init__.py", line 627, in _writeTable
+    tabledata = self.getTableData(tag)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/__init__.py", line 644, in getTableData
+    return self.reader[tag]
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/sfnt.py", line 76, in __getitem__
+    data = entry.loadData (self.file)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/sfnt.py", line 361, in loadData
+    assert len(data) == self.length
+AssertionError
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): ERROR
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): ERROR
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): ERROR
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): ERROR
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): ERROR
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): ERROR
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): ERROR
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): ERROR
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): ERROR
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): ERROR
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): ERROR
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): ERROR
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): ERROR
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_myfonts_catalogue(): OK
+$ ls -l /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf: 44548 bytes
+/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.autohint.ttf: 71916 bytes
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.autohint.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+### Subset TTFs (pyftsubset) Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): ERROR
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+Generate Cantarell-Oblique.latin
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+Generate Cantarell-Oblique.menu
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+### Optimize TTF Cantarell-BoldOblique.ttf
+Process Process-14:
+Traceback (most recent call last):
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/opt/python/2.7.8/lib/python2.7/multiprocessing/process.py", line 114, in run
+    self._target(*self._args, **self._kwargs)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/build.py", line 117, in run_processes
+    optimize.run(filename, pipedata)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_cli/pipe/optimize.py", line 57, in run
+    font = load_font(op.join(self.builddir, filename), options)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/subset.py", line 2451, in load_font
+    lazy=lazy)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/__init__.py", line 166, in __init__
+    self.reader = sfnt.SFNTReader(file, checkChecksums, fontNumber=fontNumber)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/ttLib/sfnt.py", line 49, in __init__
+    sstruct.unpack(sfntDirectoryFormat, self.file.read(sfntDirectorySize), self)
+  File "/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/FontTools/fontTools/misc/sstruct.py", line 87, in unpack
+    elements = struct.unpack(formatstring, data)
+error: unpack requires a string argument of length 12
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-BoldOblique.ttf
+bakery_lint.tests.metadata_test.MetadataTest.test_does_not_familyName_exist_in_veer_catalogue(): FAIL
+### Optimize TTF Cantarell-Bold.ttf
+bakery_lint.tests.metadata_test.MetadataTest.test_family_is_listed_in_gwf(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_atleast_latin_menu_subsets_exist(): OK
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalAscentMetrics.test_metrics_ascents_equal_bbox(): OK
+$ ls -l 'Cantarell-Bold.ttf'* # look at the size savings of that subset process
+Cantarell-Bold.ttf.opt: 43820 bytes
+Cantarell-Bold.ttf: 48588 bytes
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf.opt /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+### Autohint TTFs (ttfautohint) Cantarell-Bold.ttf
+/home/travis/virtualenv/python2.7.8/lib/python2.7/site-packages/bakery_lint/tests/metadata_test.py:141: UnicodeWarning: Unicode equal comparison failed to convert both arguments to Unicode - interpreting them as being unequal
+  self.assertTrue(designer in designers,
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_designer_exists_in_profiles_csv(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_items_dicts(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_fonts_no_dupes(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_has_unique_style_weight_pairs(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_license(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_no_unknown_top_keys(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_subsets_key_list(): OK
+bakery_lint.tests.metadata_test.MetadataTest.test_metadata_top_keys_types(): FAIL
+bakery_lint.tests.downstream.test_check_canonical_filenames.CheckCanonicalFilenames.test_check_canonical_filenames(): FAIL
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_copyrighttxt_exists(): FAIL
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_description_exists(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_fontlogtxt_exists(): OK
+bakery_lint.tests.downstream.test_check_text_files_exist.CheckTextFilesExist.test_licensetxt_exists(): FAIL
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_font_name_matches_family(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_family(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_family_values_are_all_the_same(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_filename_matches_postScriptName(): FAIL
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_font_have_regular(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fonts_fields_have_fontname(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_is_equal_to_internal_font_fullname(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_fullname_matches_postScriptName(): FAIL
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_postScriptName_matches_ttf_fontname(): ERROR
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_400(): OK
+bakery_lint.tests.downstream.test_metadata_agreements.CheckMetadataAgreements.test_metadata_regular_is_normal(): OK
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_encodings_of_glyphs_across_family(): ERROR
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_names_of_glyphs_across_family(): ERROR
+bakery_lint.tests.downstream.test_check_glyph_consistency.CheckGlyphConsistencyInFamily.test_the_same_number_of_glyphs_across_family(): ERROR
+bakery_lint.tests.downstream.test_check_monospace_agreements.CheckMonospaceAgreement.test_check_monospace_agreement(): OK
+bakery_lint.tests.downstream.test_check_menu_contains_proper_glyphs.CheckMenuSubsetContainsProperGlyphs.test_check_menu_contains_proper_glyphs(): ERROR
+bakery_lint.tests.downstream.test_check_files_menu_agreements.CheckFontsMenuAgreements.test_menu_file_agreement(): FAIL
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckItalicStyleMatchesMacStyle.test_check_italic_style_matches_names(): FAIL
+bakery_lint.tests.downstream.test_check_metadata_style_matches_names.CheckNormalStyleMatchesMacStyle.test_check_normal_style_matches_names(): OK
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckCanonicalWeights.test_check_canonical_weights(): FAIL
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckPostScriptNameMatchesWeight.test_postscriptname_contains_correct_weight(): FAIL
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFontWeightSameAsInMetadata.test_font_weight_same_as_in_metadata(): FAIL
+bakery_lint.tests.downstream.test_check_canonical_weights.CheckFullNameEqualCanonicalName.test_metadata_contains_current_font(): ERROR
+bakery_lint.tests.downstream.test_check_metadata_matches_nametable.CheckMetadataMatchesNameTable.test_check_metadata_matches_nametable(): ERROR
+bakery_lint.tests.downstream.test_check_canonical_styles.CheckCanonicalStyles.test_check_canonical_styles(): ERROR
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_contains_correct_rfn(): FAIL
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_is_consistent_across_family(): OK
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_copyright_matches_pattern(): FAIL
+bakery_lint.tests.downstream.test_metadata_font_copyright.CheckMetadataContainsReservedFontName.test_metadata_copyright_size(): OK
+bakery_lint.tests.downstream.test_check_subsets_exists.CheckSubsetsExist.test_check_subsets_exists(): FAIL
+bakery_lint.tests.downstream.test_check_metadata_fields.CheckMetadataFields.test_check_metadata_fields(): OK
+bakery_lint.tests.downstream.test_check_familyname_matches_fontnames.CheckFamilyNameMatchesFontNames.test_check_familyname_matches_fontnames(): OK
+bakery_lint.tests.downstream.test_check_font_name_not_in_camelcase.CheckFontNameNotInCamelCase.test_fontname_not_in_camel_case(): OK
+$ ls -l /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf: 43820 bytes
+/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.autohint.ttf: 73460 bytes
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.autohint.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+### Subset TTFs (pyftsubset) Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): ERROR
+Generate Cantarell-Bold.latin
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): FAIL
+$ bakery-dsig.py /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+Generate Cantarell-Bold.menu
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Bold.ttf
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+### Optimize TTF Cantarell-Oblique.ttf
+$ ls -l 'Cantarell-Oblique.ttf'* # look at the size savings of that subset process
+Cantarell-Oblique.ttf.opt: 71440 bytes
+Cantarell-Oblique.ttf: 71972 bytes
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf.opt /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+### Autohint TTFs (ttfautohint) Cantarell-Oblique.ttf
+$ ls -l /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf: 71440 bytes
+/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.autohint.ttf: 71916 bytes
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.autohint.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+### Subset TTFs (pyftsubset) Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_vertical_metrics.CheckVerticalDescentMetrics.test_metrics_descents_equal_bbox(): OK
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+$ bakery-encode-glyphs-fix.py --autofix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+Generate Cantarell-Oblique.latin
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.fix /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+bakery_lint.tests.downstream.test_check_unencoded_glyph.TestFontUnencodedGlyph.test_font_unencoded_glyphs(): FAIL
+bakery_lint.tests.downstream.test_check_os2_width_class.CheckOS2WidthClass.test_check_os2_width_class(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasDsigTable.test_check_font_has_dsig_table(): OK
+bakery_lint.tests.downstream.test_check_font_tables.CheckFontHasNotKernTable.test_no_kern_table_exists(): OK
+bakery_lint.tests.downstream.test_check_panose_identification.CheckPanoseIdentification.test_check_panose_identification(): OK
+bakery_lint.tests.downstream.test_gpos_table_has_kerning_info.CheckGposTableHasKerningInfo.test_gpos_table_has_kerning_info(): FAIL
+bakery_lint.tests.downstream.test_check_upm_heights_less_120.TestCheckUPMHeightsLess120.test_check_upm_heigths_less_120(): FAIL
+bakery_lint.tests.downstream.test_check_italic_angle_agreement.CheckItalicAngleAgreement.test_check_italic_angle_agreement(): OK
+bakery_lint.tests.downstream.test_check_no_problematic_formats.CheckNoProblematicFormats.test_check_no_problematic_formats(): OK
+bakery_lint.tests.downstream.test_check_fontname_matches_macstyle.CheckFontNameEqualToMacStyleFlags.test_fontname_is_equal_to_macstyle(): FAIL
+bakery_lint.tests.downstream.test_names_are_ascii_only.CheckNamesAreASCIIOnly.test_check_names_are_ascii_only(): OK
+Generate Cantarell-Oblique.menu
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Oblique.ttf
+bakery_lint.tests.downstream.test_check_magic_prep_code.CheckMagicPREPByteCode.test_prep_magic_code(): FAIL
+bakery_lint.tests.downstream.test_check_full_font_name_begins_with_family_name.CheckFullFontNameBeginsWithFamilyName.test_check_full_font_name_begins_with_family_name(): OK
+### Optimize TTF Cantarell-Regular.ttf
+$ ls -l 'Cantarell-Regular.ttf'* # look at the size savings of that subset process
+Cantarell-Regular.ttf.opt: 42308 bytes
+Cantarell-Regular.ttf: 47056 bytes
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf.opt /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+### Autohint TTFs (ttfautohint) Cantarell-Regular.ttf
+$ ls -l /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.*ttf # look at the size savings of that subset process
+/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf: 42308 bytes
+/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.autohint.ttf: 68832 bytes
+$ mv /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.autohint.ttf /home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+### Subset TTFs (pyftsubset) Cantarell-Regular.ttf
+Generate Cantarell-Regular.latin
+Generate Cantarell-Regular.menu
+strippedname:/home/travis/build/fontdirectory/cantarell/builds/build/Cantarell-Regular.ttf
+{
+  "name": "Cantarell", 
+  "designer": "Dave Crossland", 
+  "license": "OFL", 
+  "visibility": "External", 
+  "category": "Sans Serif", 
+  "size": 24798, 
+  "fonts": [
+    {
+      "name": "Cantarell", 
+      "postScriptName": "Cantarell-BoldOblique", 
+      "fullName": "Cantarell Bold Oblique", 
+      "style": "italic", 
+      "weight": 700, 
+      "filename": "Cantarell-BoldOblique.ttf", 
+      "copyright": "Copyright (c) 2009 Dave Crossland <dave@lab6.com>"
+    }, 
+    {
+      "name": "Cantarell", 
+      "postScriptName": "Cantarell-Oblique", 
+      "fullName": "Cantarell Oblique", 
+      "style": "italic", 
+      "weight": 500, 
+      "filename": "Cantarell-Oblique.ttf", 
+      "copyright": "Copyright (c) 2009 Dave Crossland <dave@lab6.com>"
+    }, 
+    {
+      "name": "Cantarell", 
+      "postScriptName": "Cantarell-Regular", 
+      "fullName": "Cantarell Regular", 
+      "style": "normal", 
+      "weight": 500, 
+      "filename": "Cantarell-Regular.ttf", 
+      "copyright": "Copyright (c) 2009 Dave Crossland <dave@lab6.com>"
+    }, 
+    {
+      "name": "Cantarell", 
+      "postScriptName": "Cantarell-Bold", 
+      "fullName": "Cantarell Bold", 
+      "style": "normal", 
+      "weight": 700, 
+      "filename": "Cantarell-Bold.ttf", 
+      "copyright": "Copyright (c) 2009 Dave Crossland <dave@lab6.com>"
+    }, 
+    {
+      "name": "Cantarell", 
+      "postScriptName": "Cantarell-Regular", 
+      "fullName": "Cantarell Regular", 
+      "style": "normal", 
+      "weight": 500, 
+      "filename": "Cantarell-Regular-Spiro.ttf", 
+      "copyright": "Copyright (c) 2009 Dave Crossland <dave@lab6.com>"
+    }
+  ], 
+  "subsets": [
+    "latin"
+  ], 
+  "dateAdded": "2010-05-10"
+}
